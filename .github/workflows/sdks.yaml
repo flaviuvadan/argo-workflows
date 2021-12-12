@@ -6,11 +6,6 @@ on:
     branches:
       - master
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    name: Test
-    steps:
-      - run: echo "Hello, world!"
   sdk:
     runs-on: ubuntu-latest
     name: Publish SDK
