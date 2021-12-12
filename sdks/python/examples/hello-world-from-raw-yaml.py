@@ -16,7 +16,7 @@ manifest = yaml.safe_load(resp.text)
 api_client = argo_workflows.ApiClient(configuration)
 api_instance = workflow_service_api.WorkflowServiceApi(api_client)
 api_response = api_instance.create_workflow(
-    namespace='default',
+    namespace='argo',
     body=IoArgoprojWorkflowV1alpha1WorkflowCreateRequest(
         workflow=manifest, _check_type=False))
 pprint(api_response)
