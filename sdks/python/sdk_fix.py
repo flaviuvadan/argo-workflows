@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
 
-api_client_path = str(Path(__file__).parent / 'client' / 'argo_workflows' / 'api_client.py')
+api_client_path = str(Path(__file__).parent / 'client' / 'argo_workflows_test' / 'api_client.py')
 api_client_lines = open(api_client_path, 'r').readlines()
 line_to_insert_at = -1
 
