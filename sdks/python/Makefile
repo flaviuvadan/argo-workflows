@@ -31,15 +31,15 @@ generate:
 		--generator-name python \
 		--output /wd \
 		--additional-properties packageVersion=${VERSION} \
-		--additional-properties packageName="argo_workflows" \
-		--additional-properties projectName="argo-workflows" \
+		--additional-properties packageName="argo_workflows_test" \
+		--additional-properties projectName="argo-workflows-test" \
 		--additional-properties hideGenerationTimestamp=true \
 		--remove-operation-id-prefix \
 		--model-name-prefix '' \
 		--model-name-suffix '' \
 		--artifact-id argo-python-client \
 		--global-property modelTests=false \
- 		--global-property packageName=argo_workflows \
+ 		--global-property packageName=argo_workflows_test \
 		--generate-alias-as-model
 	# https://vsupalov.com/docker-shared-permissions/#set-the-docker-user-when-running-your-container
 	$(CHOWN) $(WD) || sudo $(CHOWN) $(WD)
